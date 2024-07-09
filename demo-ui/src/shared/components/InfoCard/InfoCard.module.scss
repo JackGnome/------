@@ -1,0 +1,54 @@
+.rootWrapper {
+    position: relative;
+    width: 100%;
+    padding-right: 63%;
+    height: 460px;
+    border-radius: 20px;
+    padding-left: 30px;
+    box-shadow: -4px 6px 20px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.title {
+    //box-sizing: content-box;
+    margin-top: 70px;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.link {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #1B3154;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 300ms;
+
+    &:hover {
+        color: #E13200;
+    }
+}
+
+.preview {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}

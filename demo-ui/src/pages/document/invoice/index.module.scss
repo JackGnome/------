@@ -1,0 +1,48 @@
+.rootWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.pageTitle {
+    width: 100%;
+}
+
+.formWrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.companyInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.invoiceLink {
+    display: flex;
+    align-items: center;
+}
+
+.productTableWrapper {
+    width: calc(70% - 50px);
+}
+
+.productTableTitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.invoiceTypeWrapper {
+    width: 100%;
+}

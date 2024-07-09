@@ -1,0 +1,66 @@
+.rootWrapper {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    & :global(.ant-form-item) {
+        margin: 0;
+    }
+
+    .optionGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .header {
+        text-transform: uppercase;
+        font-size: 21px;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .priceInputWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .priceInput {
+            width: 140px;
+            height: 45px;
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+.redButton {
+    background: #CF3A20;
+    border: none;
+    width: 240px;
+    height: 54px;
+    border-radius: 4px;
+    align-self: center;
+
+    span {
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+}

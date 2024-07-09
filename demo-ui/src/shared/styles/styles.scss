@@ -1,0 +1,25 @@
+@import '@/shared/styles/base/fonts';
+@import '@/shared/styles/base/constants';
+@import '@/shared/styles/base/color-palette';
+@import '@/shared/styles/base/typography';
+@import '@/shared/styles/base/global';
+
+* {
+  color: $clr-palette-secondary-blue;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}

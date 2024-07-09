@@ -1,0 +1,21 @@
+@import '@/shared/styles/base/constants';
+@import '@/shared/styles/base/_color-palette.scss';
+
+.rootWrapper {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.transparentBackground {
+  background-color: transparent;
+}
+
+.grayBackground {
+  background-color: #F0F0F0;
+}
+
+.blackBackground {
+  background-color: $clr-palette-secondary-blue;
+}

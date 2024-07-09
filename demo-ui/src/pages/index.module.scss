@@ -1,0 +1,26 @@
+.titleSection {
+    margin-top: 150px;
+}
+
+.bigTitleWrapper {
+    display: block;
+    flex-direction: column;
+}
+
+.bigTitleWrapper span {
+    color: #E13200;
+    display: block;
+    text-transform: uppercase;
+}
+
+.bigTitleWrapper, .bigTitleWrapper span {
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 180px;
+    position: relative;
+    top: -50px;
+}
+
+.rightTitle {
+    text-align: right;
+}

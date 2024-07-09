@@ -1,0 +1,48 @@
+spring:
+    application:
+        name: djarena-service
+    datasource:
+        url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:djarena}?useSSL=false&allowPublicKeyRetrieval=true
+        driverClassName: org.postgresql.Driver
+        username: ${USERNAME:postgres}
+        password: ${PASSWORD:toor}
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+    flyway:
+        baseline-on-migrate: true
+    servlet:
+        multipart:
+            enabled: true
+            file-size-threshold: 2KB
+            max-file-size: 10MB
+            max-request-size: 15MB
+    rabbitmq:
+        host: ${RABBIT_HOST:localhost}
+        port: ${RABBIT_USERNAME:5672}
+        username: ${RABBIT_USERNAME:guest}
+        password: ${RABBIT_PASSWORD:guest}
+
+object-storage:
+    endpoint:
+        uri:  ${OBJECT_STORAGE_HOST:http://localhost}:${OBJECT_STORAGE_PORT:9000}
+    credentials:
+        access-key: ${OBJECT_STORAGE_ACCESS_KEY:minioadmin}
+        secret-key: ${OBJECT_STORAGE_ACCESS_KEY:minioadmin}
+    buckets:
+        product-preview:
+            name: ${PRODUCT_PREVIEW_BUCKET:product-preview}
+            default-image: ${DEFAULT_PRODUCT_IMAGE:default.webp}
+
+security:
+    jwt:
+        secret-key: ${JWT_SECRET_KEY:3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b}
+    access-token:
+        expiration-time: ${ACCESS_TOKEN_EXPIRATION_TIME:3600} # 1h in seconds
+    refresh-token:
+        expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME:1728000} # 20d in seconds
+    role:
+        default: ${DEFAULT_ROLE:USER}
+
+logging:
+    service-code: djarena-service
+    exception-handler-trace: true

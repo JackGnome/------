@@ -1,0 +1,39 @@
+.rootWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #000110;
+    padding: 90px 0;
+}
+
+.title {
+    color: #E13200;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.description {
+    width: 400px;
+    margin-top: 26px;
+    color: white;
+    font-size: 15px;
+}
+
+.contacts {
+    margin-top: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .icon {
+
+        & img {
+            width: 60px;
+            height: 60px;
+            transition: opacity 300ms;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}

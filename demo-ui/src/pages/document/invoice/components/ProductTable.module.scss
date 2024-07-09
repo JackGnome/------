@@ -1,0 +1,16 @@
+.tableRow {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 30px;
+
+  div {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
